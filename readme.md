@@ -1,13 +1,3 @@
-Here you go — a clean, professional, **README.md** for **Jenkins 101** under **Team SkyOps**, with badges, installation steps, and proper formatting.
-No fluff. Just a solid, industry-grade README you can use directly.
-
----
-
-# ✅ **README.md — Jenkins 101 (Team SkyOps)**
-
-*(Copy/paste this entire markdown file)*
-
-```markdown
 # 🚀 Jenkins 101 — Team SkyOps
 
 ![Jenkins](https://img.shields.io/badge/Jenkins-Automation-red?logo=jenkins&logoColor=white)
@@ -247,9 +237,3 @@ Cloud | DevOps | Automation Training
 
 If you want a **Jenkins + Terraform Pipeline**, **GitHub Webhooks Setup**, or **Multi-Environment CI/CD**, let us know — we’ll add it to SkyOps 102/201!
 
-```
-
----
-
-If you want a **banner**, **logo**, or **folder structure diagram** added to this README, tell me and I’ll upgrade it.
-```
