@@ -61,7 +61,7 @@ Follow these commands step-by-step:
 
 
 
-# Update Your System
+## Update Your System
 ```bash
 sudo yum update -y
 ````
