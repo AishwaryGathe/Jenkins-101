@@ -1,4 +1,4 @@
-# 🚀 Jenkins 101 — Team SkyOps
+# Jenkins 101 — Team SkyOps
 
 ![Jenkins](https://img.shields.io/badge/Jenkins-Automation-red?logo=jenkins&logoColor=white)
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
@@ -8,7 +8,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 Welcome to **Jenkins 101**, created by **Team SkyOps**.  
 This guide helps beginners rapidly understand **Jenkins installation, setup, and CI/CD basics** using an AWS EC2 instance.
@@ -17,7 +17,7 @@ If you're new to DevOps, this is your starting point to master one of the most w
 
 ---
 
-## 🔥 What You Will Learn
+## What You Will Learn
 
 - What Jenkins is and how it works  
 - How to install Jenkins on Amazon Linux  
@@ -29,7 +29,7 @@ If you're new to DevOps, this is your starting point to master one of the most w
 
 ---
 
-## 🏗️ Jenkins Architecture (Simple)
+## Jenkins Architecture (Simple)
 
 ```
 
@@ -39,7 +39,7 @@ Developer → GitHub → Jenkins → Build/Deploy → AWS/Server
 
 ---
 
-## 🧩 Prerequisites
+## Prerequisites
 
 Before starting, you must have:
 
@@ -55,20 +55,20 @@ Port 8080 → 0.0.0.0/0
 
 ---
 
-# 🛠️ Jenkins Installation Guide (Amazon Linux 2)
+# Jenkins Installation Guide (Amazon Linux 2)
 
 Follow these commands step-by-step:
 
----
 
-## 1️⃣ Update Your System
+
+# Update Your System
 ```bash
 sudo yum update -y
 ````
 
 ---
 
-## 2️⃣ Install Java (Required for Jenkins)
+## Install Java (Required for Jenkins)
 
 ```bash
 sudo yum install java-amazon -y
@@ -82,7 +82,7 @@ java -version
 
 ---
 
-## 3️⃣ Add Jenkins Repository
+## 3 Add Jenkins Repository
 
 ```bash
 sudo tee /etc/yum.repos.d/jenkins.repo<<EOF
@@ -96,7 +96,7 @@ EOF
 
 ---
 
-## 4️⃣ Install Jenkins
+## 4 Install Jenkins
 
 ```bash
 sudo yum install jenkins -y
@@ -104,7 +104,7 @@ sudo yum install jenkins -y
 
 ---
 
-## 5️⃣ Start and Enable Jenkins
+## 5 Start and Enable Jenkins
 
 ```bash
 sudo systemctl start jenkins
@@ -117,7 +117,7 @@ You should see:
 
 ---
 
-## 6️⃣ Access Jenkins in Browser
+## 6 Access Jenkins in Browser
 
 Open:
 
@@ -127,7 +127,7 @@ http://<EC2-Public-IP>:8080
 
 ---
 
-## 7️⃣ Get Initial Admin Password
+## 7 Get Initial Admin Password
 
 ```bash
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
@@ -137,7 +137,7 @@ Copy → Paste → Continue setup.
 
 ---
 
-# 🔌 Installing Plugins
+# Installing Plugins
 
 Inside Jenkins:
 
@@ -155,7 +155,7 @@ Install:
 
 ---
 
-# 📜 First Jenkins Pipeline
+# First Jenkins Pipeline
 
 Create a pipeline job → Add this **Jenkinsfile**:
 
@@ -177,9 +177,9 @@ Run → You’ll see logs in console output.
 
 ---
 
-# 🩺 Troubleshooting (Common Issues)
+# Troubleshooting (Common Issues)
 
-### ❌ Pipeline stuck in queue
+### Pipeline stuck in queue
 
 Cause: Not enough executors
 Fix:
@@ -190,7 +190,7 @@ Manage Jenkins → Nodes → Built-In Node → Number of Executors = 2
 
 ---
 
-### ❌ Jenkins offline
+### Jenkins offline
 
 Fix:
 
@@ -200,13 +200,13 @@ Dashboard → Build Executor Status → Mark as online
 
 ---
 
-### ❌ Cannot access Jenkins
+### Cannot access Jenkins
 
 Fix: Open security group port `8080`
 
 ---
 
-### ❌ Disk full
+### Disk full
 
 Fix:
 
@@ -215,7 +215,7 @@ Fix:
 
 ---
 
-# 👨‍💻 Team SkyOps — Vision
+# Team SkyOps — Vision
 
 We build tools, pipelines, and cloud infrastructure with:
 
@@ -226,14 +226,14 @@ We build tools, pipelines, and cloud infrastructure with:
 
 ---
 
-# ⭐ Author
+# Author
 
 **Team SkyOps**
 Cloud | DevOps | Automation Training
 
 ---
 
-# 🎉 Enjoy Jenkins 101
+# Enjoy Jenkins 101
 
 If you want a **Jenkins + Terraform Pipeline**, **GitHub Webhooks Setup**, or **Multi-Environment CI/CD**, let us know — we’ll add it to SkyOps 102/201!
 
